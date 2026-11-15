@@ -43,7 +43,7 @@ def test_dbl_01_finish_is_processed_only_once(inventory_page: InventoryPage, cli
 
     assert history_length(inventory_page.page) - before == 1, "Bestellung wurde mehrfach abgeschlossen"
 
-
+  
 @known_bug("BUG-06")
 @HOCH
 def test_dbl_02_no_second_order_via_back_button(inventory_page: InventoryPage):

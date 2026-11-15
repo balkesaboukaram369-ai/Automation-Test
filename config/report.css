@@ -1,0 +1,32 @@
+/* Zusätzliches Aussehen für den HTML-Bericht (wird über --css in pytest.ini eingebunden) */
+
+body { font-family: "Segoe UI", Arial, sans-serif; max-width: 1400px; margin: 0 auto; padding: 0 16px; }
+h1 { color: #132c48; }
+
+/* Testabschluss-Übersicht */
+.testabschluss { background: #f6f8fb; border: 1px solid #dde3ea; border-radius: 8px; padding: 12px 20px; margin: 16px 0; }
+.testabschluss h2 { margin-top: 4px; }
+.kacheln { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 14px; }
+.kachel { background: #fff; border: 1px solid #dde3ea; border-top: 4px solid #8a99a8; border-radius: 6px;
+          padding: 10px 16px; min-width: 130px; text-align: center; }
+.kachel .zahl { font-size: 26px; font-weight: bold; }
+.kachel.gruen { border-top-color: #2e7d32; }
+.kachel.rot { border-top-color: #c62828; }
+.kachel.orange { border-top-color: #ef8c00; }
+
+.bewertung { border-left: 6px solid; border-radius: 4px; padding: 10px 14px; margin: 10px 0 16px; background: #fff; }
+.bewertung.gruen { border-color: #2e7d32; }
+.bewertung.orange { border-color: #ef8c00; }
+.bewertung.rot { border-color: #c62828; }
+
+table.uebersicht { border-collapse: collapse; background: #fff; margin-bottom: 12px; }
+table.uebersicht th, table.uebersicht td { border: 1px solid #dde3ea; padding: 5px 12px; text-align: left; }
+table.uebersicht th { background: #eef2f6; }
+td.rot { color: #c62828; font-weight: bold; }
+.hinweis { color: #555; font-size: 13px; }
+
+/* Priorität als farbiges Etikett (in der Übersicht und in der Ergebnistabelle) */
+.prio { padding: 2px 8px; border-radius: 10px; font-size: 12px; font-weight: bold; color: #fff; }
+.prio-hoch { background: #c62828; }
+.prio-mittel { background: #ef8c00; }
+.prio-niedrig { background: #5c7a99; }
